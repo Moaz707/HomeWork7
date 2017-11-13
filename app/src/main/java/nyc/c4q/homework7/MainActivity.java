@@ -128,6 +128,11 @@ public class MainActivity extends AppCompatActivity {
             yellow.setVisibility(View.INVISIBLE);
             green.setVisibility(View.INVISIBLE);
             count=3;
+        }else{
+            red.setVisibility(View.VISIBLE);
+            blue.setVisibility(View.VISIBLE);
+            yellow.setVisibility(View.VISIBLE);
+            green.setVisibility(View.VISIBLE);
         }
         for (final Integer light : arrayListXvALUE) {
             if (light == 0) {

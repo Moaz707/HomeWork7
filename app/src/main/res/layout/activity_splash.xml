@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/shooting_star_hi"
     tools:context="nyc.c4q.homework7.Splash">
+    <com.waynell.library.DropAnimationView
+        android:id="@+id/drop_animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:minSize="30dp"
+        app:maxSize="50dp"
+        app:largePercent="80%"
+        app:rate="100"
+        app:xAnimate="true"
+        app:yAnimate="true"
+        app:rotationAnimate="true"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,5 +41,16 @@
             android:textColor="@color/colorPrimary"
             android:textSize="23sp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/goPlay"
+            android:visibility="invisible"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START " />
+
+
     </LinearLayout>
+
 </RelativeLayout>
